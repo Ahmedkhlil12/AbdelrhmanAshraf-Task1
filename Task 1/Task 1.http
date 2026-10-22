@@ -1,0 +1,30 @@
+@Task_1_HostAddress = http://localhost:5260
+
+### Get All Products V1
+GET {{Task_1_HostAddress}}/v1/Product
+Accept: application/json
+
+### Get Product By Id V1
+GET {{Task_1_HostAddress}}/v1/Product/1
+Accept: application/json
+
+### Get All Products V2
+GET {{Task_1_HostAddress}}/v2/Product
+Accept: application/json
+
+### Get Product By Id V2
+GET {{Task_1_HostAddress}}/v2/Product/1
+Accept: application/json
+
+### Create Product V2
+POST {{Task_1_HostAddress}}/v2/Product
+Content-Type: application/json
+
+{
+  "name": "Monitor",
+  "price": 3500,
+  "stock": 15,
+  "description": "27 inch 4K monitor"
+}
+
+###
